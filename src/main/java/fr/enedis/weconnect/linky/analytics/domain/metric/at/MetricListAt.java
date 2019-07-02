@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class CampagneAt extends Metric {
-    private String name;
+public class MetricListAt extends Metric {
+    private String CampagneName;
     private List<Scenario> scenarios;
 }

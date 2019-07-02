@@ -4,5 +4,5 @@ import lombok.Data;
 
 @Data
 public class MetricAlerteMateriel extends MetricProd {
-    private String taux;
+    private String rate;
 }

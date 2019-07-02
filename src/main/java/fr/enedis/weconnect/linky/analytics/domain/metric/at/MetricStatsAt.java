@@ -4,7 +4,7 @@ import fr.enedis.weconnect.linky.analytics.domain.metric.Metric;
 import lombok.Data;
 
 @Data
-public class MetricAt extends Metric {
+public class MetricStatsAt extends Metric {
     private int atCC1Ok;
     private int atCC1Ko;
     private int atCC2Ok;
