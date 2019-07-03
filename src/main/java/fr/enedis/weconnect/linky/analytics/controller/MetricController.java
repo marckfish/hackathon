@@ -25,14 +25,14 @@ public class MetricController {
         return MetricsGenerator.generateMetricDeploiement(10);
     }
 
-    @GetMapping("/analytics/prod/alerte")
-    public MetricAlerteService generateMetricAlerteService() {
+    @GetMapping("/analytics/prod/services")
+    public List<MetricAlerteService> generateMetricAlerteService() {
         return MetricsGenerator.generateMetricAlerteService();
     }
 
     @GetMapping("/analytics/prod/server")
-    public MetricAlerteInfra generateMetricAlerteInfra() {
-        return MetricsGenerator.generateMetricAlerteInfra();
+    public List<MetricAlerteInfra> generateMetricAlerteInfra() {
+        return MetricsGenerator.generateMetricAlerteInfra(10, 5);
     }
 
     @GetMapping("/analytics/prod/k")
