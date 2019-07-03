@@ -6,5 +6,5 @@ import lombok.Data;
 @Data
 public class MetricAlerteMateriel extends Metric {
     private String TypeMateriel;
-    private String rate;
+    private int rate;
 }

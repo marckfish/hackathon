@@ -93,7 +93,7 @@ public class MetricsGenerator {
     public static MetricAlerteMateriel generateMetricAlerteMateriel() {
         MetricAlerteMateriel metric = new MetricAlerteMateriel();
         metric.setDateMetric(Instant.now());
-        metric.setRate(faker.numerify("##%"));
+        metric.setRate(Integer.valueOf(faker.numerify("##")).intValue());
         metric.setTypeMateriel("K");
         return metric;
     }
