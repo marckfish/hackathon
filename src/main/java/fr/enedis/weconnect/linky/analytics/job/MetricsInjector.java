@@ -14,11 +14,11 @@ public class MetricsInjector {
 
     @Scheduled(cron = "0/10 * * * * ?")
     protected void scheduleDeploiement() {
-        this.template.convertAndSend("/analytics/at", MetricsGenerator.generateMetricStatsAt());
-        this.template.convertAndSend("/analytics/deploiment", MetricsGenerator.generateMetricDeploiement(10));
-        this.template.convertAndSend("/analytics/prod/alerte", MetricsGenerator.generateMetricAlerteService());
-        this.template.convertAndSend("/analytics/prod/serveur", MetricsGenerator.generateMetricAlerteInfra());
-        this.template.convertAndSend("/analytics/prod/concentrateur", MetricsGenerator.generateMetricAlerteMateriel());
-        this.template.convertAndSend("/analytics/liste/at", MetricsGenerator.generateMetricListAts(10, 20));
+        //this.template.convertAndSend("/analytics/at", MetricsGenerator.generateMetricStatsAt());
+        //this.template.convertAndSend("/analytics/deploiment", MetricsGenerator.generateMetricDeploiement(10));
+        //this.template.convertAndSend("/analytics/prod/alerte", MetricsGenerator.generateMetricAlerteService());
+       //this.template.convertAndSend("/analytics/prod/serveur", MetricsGenerator.generateMetricAlerteInfra(10, 5));
+       //this.template.convertAndSend("/analytics/prod/concentrateur", MetricsGenerator.generateMetricAlerteMateriel());
+       //this.template.convertAndSend("/analytics/liste/at", MetricsGenerator.generateMetricListAts(10, 20));
     }
 }
