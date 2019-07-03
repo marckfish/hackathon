@@ -109,11 +109,11 @@ public class MetricsGenerator {
         if (Status.ECHEC.equals(metric1.getStatus())){
             Echec echec16 = new Echec();
             echec16.setEchec("ECH006");
-            echec16.setCount(Integer.valueOf(faker.numerify("#")).intValue());
+            echec16.setCount(Integer.valueOf(faker.numerify("1#")).intValue());
             metric1.getEchecs().add(echec16);
             Echec echec12 = new Echec();
             echec12.setEchec("ECH002");
-            echec12.setCount(Integer.valueOf(faker.numerify("#")).intValue());
+            echec12.setCount(Integer.valueOf(faker.numerify("1#")).intValue());
             metric1.getEchecs().add(echec12);
             metrics.add(metric1);
 
@@ -128,11 +128,11 @@ public class MetricsGenerator {
         if (Status.ECHEC.equals(metric27.getStatus())){
             Echec echec276 = new Echec();
             echec276.setEchec("ECH006");
-            echec276.setCount(Integer.valueOf(faker.numerify("#")).intValue());
+            echec276.setCount(Integer.valueOf(faker.numerify("1#")).intValue());
             metric27.getEchecs().add(echec276);
             Echec echec272 = new Echec();
             echec272.setEchec("ECH002");
-            echec272.setCount(Integer.valueOf(faker.numerify("#")).intValue());
+            echec272.setCount(Integer.valueOf(faker.numerify("1#")).intValue());
             metric27.getEchecs().add(echec272);
             metrics.add(metric27);
 
@@ -147,11 +147,11 @@ public class MetricsGenerator {
         if (Status.ECHEC.equals(metric9.getStatus())){
             Echec echec96 = new Echec();
             echec96.setEchec("ECH006");
-            echec96.setCount(Integer.valueOf(faker.numerify("#")).intValue());
+            echec96.setCount(Integer.valueOf(faker.numerify("1#")).intValue());
             metric9.getEchecs().add(echec96);
             Echec echec92 = new Echec();
             echec92.setEchec("ECH002");
-            echec92.setCount(Integer.valueOf(faker.numerify("#")).intValue());
+            echec92.setCount(Integer.valueOf(faker.numerify("1#")).intValue());
             metric9.getEchecs().add(echec92);
             metrics.add(metric9);
         }
