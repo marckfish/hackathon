@@ -32,7 +32,7 @@ public class MetricController {
 
     @GetMapping("/analytics/prod/server")
     public List<MetricAlerteInfra> generateMetricAlerteInfra() {
-        return MetricsGenerator.generateMetricAlerteInfra(10, 5);
+        return MetricsGenerator.generateMetricAlerteInfra(7, 5);
     }
 
     @GetMapping("/analytics/prod/k")

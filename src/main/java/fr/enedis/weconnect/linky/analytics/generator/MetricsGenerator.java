@@ -76,7 +76,7 @@ public class MetricsGenerator {
         IntStream.range(1, sampleCount).forEach(count ->{
             MetricAlerteInfra metric = new MetricAlerteInfra();
             metric.setDateMetric(Instant.now());
-            metric.setComponentName(faker.bothify("Component_?#?#"));
+            metric.setComponentName( faker.options().option("REF", "CORE", "BPEL", "OSB", "IGC", "IDSE", "IDS-ZI"));
             metric.setType(faker.options().option(MetricType.class));
             metric.setInstances(new ArrayList<>());
             IntStream.range(1, itemCount).forEach(item ->{
